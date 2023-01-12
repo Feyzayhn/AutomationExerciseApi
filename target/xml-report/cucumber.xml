@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.073">
+    <testcase classname="DELETE To Verify Login" name="DELETE To Verify Login" time="1.972">
+        <system-out>
+            <![CDATA[Given H_Url "verifyLogin"...................................................passed
+Then H_Request Method DELETE................................................passed
+Then H_Response Code 405....................................................passed
+And H_Response Message "This request method is not supported."..............passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
