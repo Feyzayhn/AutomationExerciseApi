@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.073">
-    <testcase classname="DELETE To Verify Login" name="DELETE To Verify Login" time="1.972">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="6.538">
+    <testcase classname="Get All Products List" name="Get All Products List" time="2.382">
+        <system-out>
+            <![CDATA[Then Url "productsList".....................................................passed
+Then Request Method GET.....................................................passed
+Then Response Code 200......................................................passed
+And Response JSON All products list.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="POST To All Products List" name="POST To All Products List" time="0.58">
+        <system-out>
+            <![CDATA[Given B_Url "productsList"..................................................passed
+Then B_Request Method POST..................................................passed
+Then B_Response Code 405....................................................passed
+And B_Response Message "This request method is not supported."..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Get All Brands List" name="Get All Brands List" time="1.032">
+        <system-out>
+            <![CDATA[Given C_Url "brandsList"....................................................passed
+Then C_Request Method GET...................................................passed
+Then C_Response Code 200....................................................passed
+And C_Response JSON All brands list.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="PUT To All Brands List" name="PUT To All Brands List" time="0.963">
+        <system-out>
+            <![CDATA[Given D_Url "brandsList"....................................................passed
+Then D_Request Method PUT...................................................passed
+Then D_Response Code 405....................................................passed
+And Response Message "This request method is not supported."................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DELETE To Verify Login" name="DELETE To Verify Login" time="0.941">
         <system-out>
             <![CDATA[Given H_Url "verifyLogin"...................................................passed
 Then H_Request Method DELETE................................................passed
 Then H_Response Code 405....................................................passed
 And H_Response Message "This request method is not supported."..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="GET user account detail by email" name="GET user account detail by email" time="0.497">
+        <system-out>
+            <![CDATA[Given Z_API URL "getUserDetailByEmail" "email"..............................passed
+When Z_Request Method GET...................................................passed
+Then Z_Response Code 200....................................................passed
+And Z_Response JSON User Detail.............................................passed
 ]]>
         </system-out>
     </testcase>
